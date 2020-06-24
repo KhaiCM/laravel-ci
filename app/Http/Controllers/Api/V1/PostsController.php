@@ -39,7 +39,7 @@ class PostsController extends Controller
     {
         try {
             $category = Post::create($request->all());
-        } catch(\Exception $e) {
+        } catch (\Exception $e) {
             return $e->getMessage();
         }
         

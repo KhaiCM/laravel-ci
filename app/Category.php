@@ -8,7 +8,13 @@ use App\Models\Post;
 
 class Category extends Model
 {
-	protected $visible = ['id', 'name', 'description', 'numberOfTopics'];
+    protected $visible = [
+        'id',
+        'name',
+        'description',
+        'numberOfTopics',
+    ];
+    
     protected $appends = ['numberOfTopics'];
 
     public function topics()

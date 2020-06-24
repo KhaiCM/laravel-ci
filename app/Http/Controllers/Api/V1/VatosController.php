@@ -39,7 +39,7 @@ class VatosController extends Controller
         dd(223427945);
         try {
             $category = Category::create($request->all());
-        } catch(\Exception $e) {
+        } catch (\Exception $e) {
             return $e->getMessage();
         }
         
